@@ -30,4 +30,13 @@ public class User {
         return balance;
 
     }
+    public double withdraw(double money){
+        if (money>balance){
+            System.out.println("Masz niewystarczajace srodki na koncie :( ");
+        } else{
+             balance=balance-money;
+        }
+        return balance;
+
+    }
 }
