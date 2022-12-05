@@ -20,7 +20,7 @@ public class User {
         return (name.substring(0,3)+surname.substring(0,3));
     }
     public void userDetails (){
-        System.out.println("Numer konta: "+ accountNumber +", Imie: "+ name+", Nazwisko: "+ surname+" ,Nickname: "+nickname+ ", Pesel: "+ pesel +", Numer konta: "+accountNumber);
+        System.out.println("Numer konta: "+ accountNumber +", Imie: "+ name+", Nazwisko: "+ surname+" ,Nickname: "+nickname+ ", Pesel: "+ pesel);
 
     }
     public double deposit(double money){
