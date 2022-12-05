@@ -17,6 +17,22 @@ public class Main {
 
         System.out.println("Menu\n 1.Informacja o koncie\n 2.Wplata pieniedzy\n 3.Wyplata pieniedzy\n 4.Wyjscie" );
 
+        System.out.println("Co bys chcial zrobic?");
+        int select= scanner.nextInt();
+        switch (select){
+            case 1:
+                System.out.println("1.Informacja o koncie");
+                break;
+            case 2:
+                System.out.println("2.Wplata pieniedzy");
+                break;
+            case 3:
+                System.out.println("3. Wyplata pieniedzy");
+                break;
+            case 4:
+                System.out.println("4.Wyjscie");
+                break;
+        }
     }
 
 
