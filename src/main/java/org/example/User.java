@@ -19,5 +19,15 @@ public class User {
     public String nicknameGenerator(String name, String surname) {
         return (name.substring(0,3)+surname.substring(0,3));
     }
+    public void userDetails (){
+        System.out.println("Numer konta: "+ accountNumber +", Imie: "+ name+", Nazwisko: "+ surname+" ,Nickname: "+nickname+ ", Pesel: "+ pesel +", Numer konta: "+accountNumber);
 
+    }
+    public double deposit(double money){
+        return balance=balance+money;
+    }
+    public double getBalance(){
+        return balance;
+
+    }
 }

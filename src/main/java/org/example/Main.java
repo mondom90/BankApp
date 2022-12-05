@@ -11,7 +11,7 @@ public class Main {
         System.out.println("Wprowadz nazwisko");
         String surname = scanner.nextLine();
         System.out.println("Wprowadz numer pesel");
-        int pesel = scanner.nextInt();
+        int pesel=scanner.nextInt();
 
         User user1=new User(name, surname, pesel);
 
@@ -22,9 +22,13 @@ public class Main {
         switch (select){
             case 1:
                 System.out.println("1.Informacja o koncie");
+                user1.userDetails();
                 break;
             case 2:
-                System.out.println("2.Wplata pieniedzy");
+                System.out.println("2.Ile chcesz wplacic pieniedzy? ");
+                double moneyToDeposit=scanner.nextDouble();
+                user1.deposit(moneyToDeposit);
+                System.out.println("Saldo Twojego konta wynosi:"+ user1.getBalance());
                 break;
             case 3:
                 System.out.println("3. Wyplata pieniedzy");
@@ -32,6 +36,7 @@ public class Main {
             case 4:
                 System.out.println("4.Wyjscie");
                 break;
+
         }
     }
 
